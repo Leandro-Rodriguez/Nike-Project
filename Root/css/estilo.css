@@ -1,0 +1,410 @@
+/* css general header -> logo + nav , footer*/
+/* cierre css general */
+/* index */
+/* servicios */
+/* rem = mejor para convertibilidad de sitios; 1 rem equivaldria 10px
+para el html - font-size: 62.5%;
+para el body - font-size: 16px; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 2560px) {
+
+@font-face {
+	font-family: "Silkscreen";
+	src: url("../assets/font/Silkscreen.ttf");
+	font-family: "Kanit";
+	src: url("../assets/font/Kanit.ttf");
+}
+
+/* .form-control me-2 .btn btn-outline-success{
+	border: solid greenyellow 1px;
+	height: 3rem;
+} */
+
+header {
+	border-bottom: solid black 1px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	font-family: Poppins, Arial, sans-serif;
+	background-color: hsl(225, 6%, 9%);
+	color: #d4dbe4;
+}
+
+button {
+	border: 0;
+	background: none;
+	font-family: inherit;
+	color: inherit;
+	cursor: pointer;
+	color: white;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #202124;
+	padding: 0 35px;
+	height: 3rem;
+	margin: 10px;
+	border: solid greenyellow 1px;
+	border-radius: 10px;
+}
+
+nav > .logo {
+	font-size: 28px;
+	font-weight: 600;
+	color: greenyellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 18px;
+}
+
+body{
+	background-color: black;
+}
+.dropdowns {
+	display: flex;
+	align-self: stretch;
+}
+.dropdown {
+	position: relative;
+	padding: 25px;
+}
+
+.dropdown-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	gap: 25px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+.dropdown:hover {
+	background-color: hsl(225, 30%, 12%);
+	cursor: pointer;
+}
+
+.dropdown-button span {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.dropdown-button i {
+	font-size: 14px;
+}
+
+.dropdown:hover > .dropdown-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 100%;
+	background-color: #202124;
+	display: none;
+}
+
+.dropdown-menu button {
+	padding: 12px 24px;
+}
+
+.dropdown-menu button:hover {
+	background-color: hsl(225, 6%, 20%);
+}
+
+.d-flex{
+		display: block;
+		margin: 15px;
+}
+
+.calesita {
+	display: flex;
+}
+
+.Titulos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.TituloCentral {
+	text-align: center;
+	font-family: tahoma;
+	font-size: 7.5rem;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.TitulosSecundarios {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-bottom: 0.5rem;
+}
+
+.TitulosSecundarios h3 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: normal;
+	font-style: oblique;
+	color: white;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+.parallax {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/img/header3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* box modeling */
+	flex-direction: column;
+	border: solid greenyellow 1px;
+	padding: 0 0 5rem 0;
+}
+
+.parallax section {
+	font-size: 10rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid greenyellow 1px;
+}
+
+.parallax h4 {
+	font-size: 10rem;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	margin: 5rem;
+	width: 75rem;
+	color: white;
+	border: solid greenyellow 0.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax h4:hover {
+	color: greenyellow;
+}
+
+.parallax p {
+	font-size: 2.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	width: 50rem;
+	color: greenyellow;
+	height: 4rem;
+	border: solid black 0.1rem;
+}
+
+.publicidad2 {
+
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.publicidad {
+
+	font-weight: bold;
+	font-size: 4.5rem;
+	margin: 2rem;
+	color: white;
+	border: solid white 2px;
+	border-radius: 5px;
+	width: 40rem;
+	overflow: hidden;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.parametroPosition {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	gap: 5rem;
+}
+
+.cuadrado1 {
+	width: 30rem;
+	height: 30rem;
+	background-color: greenyellow;
+	color: white;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	padding: 4rem;
+	margin: 1rem;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 3.5rem;
+	letter-spacing: 0.1rem;
+	border: solid black 0.1rem;
+	text-align: center;
+	border-radius: 50%;
+	text-shadow: -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 0.2px 0.2px 0 #000;
+}
+
+.cuadrado1:hover {
+	background-color: black;
+	color: white;
+	scale: 1.05;
+	border: solid greenyellow 0.5rem;
+	text-shadow: -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 0.2px 0.2px 0 #000;
+}
+
+.GridContainer{
+	height: 100%;
+	background-color: hsl(225, 6%, 9%);
+	border: black 0.1rem;
+	padding: 2rem;
+	gap: 2rem;
+	display: grid;
+	grid-auto-rows: 10rem;
+	grid-template-columns: auto auto auto auto;
+}
+
+.GridContainer div{
+	background-color: greenyellow;
+	border: black 0.1rem;
+	gap: 1rem;
+	font-size: 18px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7.5px;
+}
+
+.PrimerItem{
+	grid-column: 1 / 3;
+}
+
+.TercerItem{
+	grid-row: 2 / 4;
+
+}
+
+.NovenoItem{
+	grid-column: 3 / 5;
+}
+
+.tabla_cuadrados {
+	font-family: tahoma;
+	font-size: 15rem;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.cuadradoservicio1 {
+	width: 45rem;
+	height: 45rem;
+	background-color: greenyellow;
+	position: relative;
+	letter-spacing: 3px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 35px;
+	border: solid black 1px;
+	display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	margin: 1rem;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 3.5rem;
+}
+
+footer {
+	border: solid black 1px;
+	color: white;
+	background-image: url("../assets/img/header3.jpg");
+	height: 12rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footerazo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: hsl(225, 6%, 9%);
+	padding: 0 0px;
+	height: 4rem;
+	margin: 10px;
+	list-style: none;
+	border-radius: 50px;
+	border: solid greenyellow 1px;
+}
+
+.footerazo li {
+	margin: 40px;
+}
+
+.piedepagina {
+	font-family: tahoma;
+	font-weight: bold;
+	text-align: center;
+}
+
+.piedepagina span {
+	color: white;
+	text-shadow: -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000, 0.6px 0.6px 0 #000;
+}
+
+.piedepagina span:hover {
+	color: rgb(173, 255, 47);
+	text-shadow: -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000, 0.6px 0.6px 0 #000;
+}
+
+.piedepagina p {
+	font-size: 1.25rem;	
+	text-shadow: -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000, 0.6px 0.6px 0 #000;
+}
+
+a {	text-decoration: none;}
+}
